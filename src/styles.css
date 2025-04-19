@@ -58,7 +58,17 @@ label {
   margin-inline-end: 0px;
   unicode-bidi: isolate;
 }
-
+#socials-container {
+  display: flex
+;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
 
 .container {
   max-width: 840px;
