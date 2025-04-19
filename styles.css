@@ -61,6 +61,12 @@ label {
 .container {
   max-width: 840px;
 }
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .contenedor {
+    width: 100%;
+    padding-left: 23px;
+    flex-direction: column-reverse;
+  }}
 
 h1 {
   font-weight: 400;
