@@ -59,8 +59,7 @@ label {
   unicode-bidi: isolate;
 }
 #socials-container {
-  display: flex
-;
+  display: flex;
   justify-content: center;
   margin-top: 1rem;
   gap: 1rem;
