@@ -1,0 +1,385 @@
+body {
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.8em;
+  display: flex;
+  justify-content: center;
+}
+body a {
+  text-decoration: none;
+}
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+.light {
+  background-color: #cdcecf;
+  color: #073642;
+}
+.light * {
+  color: #073642;
+}
+.light h1, .light h2, .light h3, .light h4, .light h5, .light h6{
+  color: #586e75;
+  border-color: #657b83;
+}
+.light .bio .exp {
+  background: #eee8d5;
+}
+.light .job .left:before {
+  background: #859900;
+}
+.light .event .left:before {
+  background: #d33682;
+}
+.light .fun .left:before {
+  background: #2075B1;
+}
+.light a, .light a:active, .light a:visited, .light code.url {
+  color: #2075B1;
+}
+.light .flash {
+  color: #2075B1 !important;
+}
+.light .feather {
+  stroke: #2075B1;
+}
+label {
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 0.8em 0;
+}
+label {
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+.container {
+  max-width: 600px;
+}
+
+h1 {
+  font-weight: 400;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 300;
+  margin: 0 0 0.5em 0;
+}
+
+.links {
+  margin: 0 0 1.5em 0;
+}
+.links a {
+  margin: auto 1em auto 0;
+}
+
+.intro {
+  margin: 0 0 2em 0;
+}
+.intro .title {
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 0.8em 0;
+}
+.intro .exp {
+  display: none;
+}
+.intro ul {
+  list-style-type: none;
+  padding: 0;
+}
+.intro ul li {
+  margin: 2em 0;
+}
+
+.static {
+  margin: 0 0 2em 0;
+}
+.static .title {
+  
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 0.8em 0;
+}
+.static .exp {
+  display: block;
+}
+.static ul {
+  list-style-type: none;
+  padding: 0;
+}
+.static ul li {
+  margin: 2em 0;
+}
+.static li {
+  display: flex;
+  justify-content: flex-start;
+}
+.left {
+  font-weight: 300;
+  min-width: 18em;
+}
+.static.desc {
+  display: flex;
+  flex-direction: column;
+}
+.static.desc .info {
+  visibility: hidden;
+  max-height: 0;
+  transition: visibility 0s, max-height 0.5s linear;
+}
+.static.desc .desc-points li {
+  margin-top: 0;
+}
+.static.desc p {
+  margin: 0;
+}
+.desplegable .title:before {
+  content: "[+] ";
+}
+.static li .desc:hover .info {
+  visibility: visible;
+  max-height: 100px;
+  transition: max-height 0.5s linear;
+}
+.static.left:before {
+  content: "";
+  display: inline-block;
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 100%;
+  margin: 0 2em 0 0;
+}
+.static .loading {
+  animation: blinker 1s linear infinite;
+  margin: 1em 0 0 0;
+}
+.static .loading .hide {
+  display: none;
+}
+.qa {
+  font-weight: 700;
+  margin: 0 0 0.5em 0;
+  margin-bottom:10px;  
+}
+.qa input {
+  display:none;
+}
+.qa label {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 0.8em 0;
+  color: #586e75;
+  
+}
+.qa label:before {
+  content: "[+] ";
+}
+.qa div {
+  display:none;
+  padding-top:5px;
+}
+.qa input:checked ~ label:before {
+  content: "[-] ";
+}
+.qa input:checked ~ div {
+  display:block;
+}
+.desplegable {
+  margin: 0 0 2em 0;
+}
+.desplegable .title {
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 0.8em 0;
+}
+.desplegable .exp {
+  display: none;
+}
+.desplegable ul {
+  list-style-type: none;
+  padding: 0;
+}
+.desplegable ul li {
+  margin: 2em 0;
+}
+.desplegable li {
+  display: flex;
+  justify-content: flex-start;
+}
+.desplegable li .left {
+  font-weight: 300;
+  min-width: 18em;
+}
+.desplegable li .desc {
+  display: flex;
+  flex-direction: column;
+}
+.desplegable li .desc .info {
+  visibility: hidden;
+  max-height: 0;
+  transition: visibility 0s, max-height 0.5s linear;
+}
+.desplegable li .desc .desc-points li {
+  margin-top: 0;
+}
+.desplegable li .desc p {
+  margin: 0;
+}
+.desplegable li .desc:hover .info {
+  visibility: visible;
+  max-height: 100px;
+  transition: max-height 0.5s linear;
+}
+.desplegable li .left:before {
+  content: "";
+  display: inline-block;
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 100%;
+  margin: 0 2em 0 0;
+}
+.desplegable .loading {
+  animation: blinker 1s linear infinite;
+  margin: 1em 0 0 0;
+}
+.desplegable .loading .hide {
+  display: none;
+}
+.expand .title {
+  cursor: pointer;
+}
+.expand .title:before {
+  content: "[-] ";
+}
+.expand .exp {
+  display: block;
+}
+
+.feather {
+  width: 24px;
+  height: 24px;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+@media (max-width: 600px) {
+  .changelog li .left {
+    min-width: 160px;
+  }
+
+  .links a {
+    margin: auto 1.5em auto 0;
+  }
+}
+
+
+
+
+
+.expand .title {
+  cursor: pointer;
+}
+.expand .title:before {
+  content: "[-] ";
+}
+.expand .exp {
+  display: block;
+}
+
+.feather {
+  width: 24px;
+  height: 24px;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+@media (max-width: 600px) {
+  .desplegable li .left {
+    min-width: 160px;
+  }
+
+  .links a {
+    margin: auto 1.5em auto 0;
+  }
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+.pic-container {
+  display: flex;
+  height: 300px;
+  width: 300px;
+  margin: auto 0;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+.name-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
+}
+.btn {
+  font-weight: 400;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+.btn-color-2:hover {
+  border: #cdcecf 0.1rem solid;
+}
+.btn-color-2:hover {
+  background: #586e75;
+  color: #cdcecf;
+}
+button {
+  appearance: auto;
+  text-rendering: auto;
+  border-color: #586e75;
+  color: #cdcecf;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  cursor: default;
+  box-sizing: border-box;
+  background-color: #cdcecf;
+  margin: 0em;
+  padding-block: 1px;
+  padding-inline: 6px;
+}
